@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?
-family=Roboto:wght@300;400&display=swap')
+family=Roboto:wght@300;400&display=swap');
 
 *{
     box-sizing: border-box;
@@ -8,9 +8,9 @@ family=Roboto:wght@300;400&display=swap')
 }
 
 body{
-    backgroud: #333;
+    background: #333;
     color: #fff;
-    font-family; 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -19,8 +19,36 @@ body{
     grid-gap: 10px;
 }
 
-.container > dir{
+.container > div{
     height: 210px;
-    background: url('./img/woman-young-student.jpg')
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.container > div:nth-of-type(1){
+    grid-column: 1 / 3 ;
+}
+
+.container > div:nth-of-type(6){
+    grid-column: 3 / 5 ;
+}
+
+.container > div:nth-of-type(8){
+    grid-column: 2 / 4 ;
+}
+
+.container > div:nth-of-type(10){
+    grid-column: 1 / 3 ;
+}
+
+.container > div:nth-of-type(15){
+    grid-column: 3 / 5 ;
+}
+
+.bg1{
+    background: url('./img/kind.jpg');
+}
+
+.bg2{
+    background: url('./img/young-health.jpg');
 }
